@@ -6,6 +6,8 @@ round trip is the whole integration.
 
 ## Deploy
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/persql?referralCode=yRh8j2&utm_medium=integration&utm_source=readme&utm_campaign=persql-railway)
+
 1. **Get a database.** Visit **[railway.persql.com/connect](https://railway.persql.com/connect)**,
    sign in, and provision a database. You'll get three values:
 
@@ -15,22 +17,13 @@ round trip is the whole integration.
    | `PERSQL_DATABASE` | `<namespace>/<db-slug>` |
    | `PERSQL_TOKEN` | a token scoped to that one database |
 
-2. **Deploy this repo on Railway.** Either:
-   - **From the dashboard:** New Project → *Deploy from GitHub repo* →
-     `persql/railway-starter`. Railway auto-detects Node (`railway.json`
-     pins build + start + healthcheck).
-   - **One click (after the template is published):**
+2. **Deploy.** Click the button above. Railway prompts for `PERSQL_DATABASE`
+   and `PERSQL_TOKEN` — paste the values from step 1 (`PERSQL_API_URL` is
+   pre-filled). Prefer the dashboard? **New Project → Deploy from GitHub repo →
+   `persql/railway-starter`** works too; `railway.json` pins the build, start
+   command, and healthcheck.
 
-     [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/<TEMPLATE_CODE>)
-
-     > The maintainer fills in `<TEMPLATE_CODE>` after publishing this
-     > repo as a Railway template (Railway templates live in the Railway
-     > gallery, not in a repo file). Until then, use the dashboard path.
-
-3. **Set the variables.** In the service's **Variables** tab, add the three
-   values from step 1 (or share them across services with a shared group).
-
-4. **Open the service URL.** The visit counter increments on each refresh.
+3. **Open the service URL.** The visit counter increments on each refresh.
 
 ## How it connects
 
